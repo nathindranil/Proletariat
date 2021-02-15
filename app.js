@@ -166,6 +166,8 @@ app.get("/logout", (req, res) => {
   res.redirect("/")
 })
 
-app.listen(process.env.PORT, () => {
+var port = process.env.PORT || 8000
+
+app.listen(port, () => {
   console.log("Server has started")
 })

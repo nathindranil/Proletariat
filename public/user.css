@@ -1,0 +1,91 @@
+.userinfo {
+  background-color: #fff;
+  margin: 3em auto;
+  width: 70%;
+  padding: 4em;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+}
+
+hr {
+  margin: 3em auto;
+  width: 90%;
+  color: rgba(156, 156, 156, 0.5);
+}
+
+.userinfo h3 {
+  text-align: center;
+  font-size: 2em;
+}
+
+#address {
+  width: 50%;
+  background-color: rgba(207, 224, 250, 0.6);
+  padding: 2em;
+  padding-left: 4em;
+  border-bottom: 1px solid grey;
+}
+
+#address h4 {
+  font-size: 1.5em;
+}
+
+#address p {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: rgb(50, 50, 50);
+}
+
+#pincode {
+  padding: 2em;
+  padding-left: 4em;
+  width: 50%;
+  float: left;
+  background-color: rgba(221, 179, 232, 0.6);
+  padding-bottom: 6.1%;
+  border-right: 1px solid grey;
+}
+
+#pincode h4 {
+  font-size: 1.5em;
+}
+
+#pincode p {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: rgb(50, 50, 50);
+}
+
+
+#contact {
+  margin-left: 50%;
+  width: 50%;
+  text-align: right;
+  background-color: rgba(200, 173, 224, 0.6);
+  padding: 2em;
+}
+
+#contact h4 {
+  font-size: 1.5em;
+}
+
+#contact p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+#profileuppdate {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+
+#profileuppdate a{
+  text-decoration: none;
+  color: #000;
+}
+
+#profileuppdate a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

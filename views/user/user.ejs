@@ -1,10 +1,24 @@
 <%- include("../partials/header") %>
+<div class="userinfo">
   <h3><%= user.username %></h3>
+  <hr>
   <% if(user.address != undefined) { %>
-    <h2><%= user.address %></h2>
-    <p><%= user.pincode %></p>
-    <p><%= user.contact %></p>
+    <div id="address">
+      <h4>Address:</h4>
+      <p><%= user.address %></p>
+    </div>
+    <div id="pincode">
+      <h4>Pincode:</h4>
+      <p><%= user.pincode %></p>
+    </div>
+    <div id="contact">
+      <h4>Contact</h4>
+      <p>Email: <%= user.email %></p>
+      <p>Phone: <%= user.contact %></p>
+    </div>
+    <p id="profileuppdate"><a href="/<%= user._id %>/update">Update your profile</a></p>
   <% } else { %>
-    <p><a href="/<%= user._id %>/update">Update your profile</a></p>
+    <p id="profileuppdate"><a href="/<%= user._id %>/update">Update your profile</a></p>
   <% } %>
+</div>
 <%- include("../partials/footer") %>

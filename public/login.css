@@ -16,7 +16,7 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
-input, button{
+.cont input, .cont button{
   border:none;
   outline: none;
   background: none;
@@ -42,27 +42,27 @@ input, button{
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
-h2{
+.cont h2{
   width: 100%;
   font-size: 30px;
   text-align: center;
 }
 
-label{
+.cont label{
   display: block;
   width: 260px;
   margin: 25px auto 0;
   text-align: center;
 }
 
-label span{
+.cont label span{
   font-size: 14px;
   font-weight: 600;
   color: #505f75;
   text-transform: uppercase;
 }
 
-input{
+.cont input{
   display: block;
   width: 100%;
   margin-top: 5px;
@@ -73,7 +73,7 @@ input{
   font-family: 'Nunito', sans-serif;
 }
 
-button{
+.cont button{
   display: block;
   margin: 0 auto;
   width: 260px;
@@ -82,6 +82,9 @@ button{
   color: #fff;
   font-size: 15px;
   cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
 }
 
 .submit{
@@ -310,4 +313,15 @@ button{
 .cont.s-signup .sign-up{
   -webkit-transform:translate3d(0, 0, 0);
           transform:translate3d(0, 0, 0);
+}
+
+
+@media screen and (max-width:1024px) {
+  .container {
+    width: 50%;
+  }
+
+  .collapse {
+    width: 20%;
+  }
 }

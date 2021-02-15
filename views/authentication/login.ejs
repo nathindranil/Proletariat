@@ -10,11 +10,11 @@
   <body>
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/">Proletarian</a>
         <div class="collapse navbar-collapse d-flex justify-content-end">
           <ul class="navbar-nav">
             <% if(currentUser == undefined) { %>
-              <li class="nav-item"><a href="/login" class="nav-link">Log In</a></li>
+              <li class="nav-item"><a href="/login" class="nav-link login">Log In</a></li>
             <% } else { %>
               <li class="nav-item"><a href="/<%= currentUser.username %>/profile" class="nav-link"><%= currentUser.username %></a></li>
               <li class="nav-item"><a href="/<%= currentUser.username %>/jobs" class="nav-link">Post a job</a></li>
