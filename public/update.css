@@ -1,0 +1,55 @@
+.updateuser {
+  background-color: #fff;
+  margin: 15% auto;
+  width: 80%;
+  padding: 2em;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.updateuser h2 {
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Nunito' sans-serif;
+  text-transform: capitalize;
+}
+
+.updateuser label{
+  margin-bottom: 5%;
+}
+
+.updateuser input {
+  width: 100%;
+  text-align: center;
+}
+
+.updateuser input:focus::placeholder {
+  color: transparent;
+}
+
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  height: 2em;
+}
+
+.updateuser button {
+  background-image: linear-gradient(to left, #7579ff, #b224ef);
+  border: 0;
+  border-radius: 30px;
+  width: 30%;
+  height: 36px;
+  margin: 10% 35%;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.updateuser button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #7579ff, #b224ef);
+}

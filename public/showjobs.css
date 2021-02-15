@@ -1,0 +1,53 @@
+.showjob {
+  border: none;
+  width: 80%;
+  margin: 1.2em auto;
+  background-color: rgb(242, 242, 242);
+  min-height: 5em;
+  box-shadow: 0 19px 30px rgba(0, 0, 0, 0.30), 0 10px 12px rgba(0, 0, 0, 0.22);
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+.showjob li {
+  list-style: none;
+}
+
+.showjob span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 3%;
+}
+
+.showjob p {
+  font-size: 0.8em;
+  text-align: right;
+  margin-top: 5%;
+}
+
+.search {
+  margin: 2em auto;
+  width: 80%;
+}
+
+.search input {
+  width: 70%;
+}
+
+.search button {
+  width: 20%;
+  height: 34px;
+  background-image: linear-gradient(to left, #b224ef, #7579ff);
+  border: 1px solid white;
+  box-shadow: 0 19px 30px rgba(0, 0, 0, 0.30), 0 -10px 12px rgba(0, 0, 0, 0.22);
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.search button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to left, #7579ff, #b224ef);
+}

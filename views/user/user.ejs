@@ -1,0 +1,10 @@
+<%- include("../partials/header") %>
+  <h3><%= user.username %></h3>
+  <% if(user.address != undefined) { %>
+    <h2><%= user.address %></h2>
+    <p><%= user.pincode %></p>
+    <p><%= user.contact %></p>
+  <% } else { %>
+    <p><a href="/<%= user._id %>/update">Update your profile</a></p>
+  <% } %>
+<%- include("../partials/footer") %>

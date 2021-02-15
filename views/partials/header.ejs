@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proletariat</title>
+    <link rel="stylesheet" href="/landing.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/job.css">
+    <link rel="stylesheet" href="/showjobs.css">
+    <link rel="stylesheet" href="/onejob.css">
+    <link rel="stylesheet" href="/update.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>Proletarian</h4>
+      </div>
+      <ul class="nav-links">
+        <% if(currentUser == undefined) { %>
+          <li class="nav-item"><a href="/login" class="nav-link">Log In</a></li>
+        <% } else { %>
+          <li class="nav-item"><a href="/<%= currentUser.username %>/profile" class="nav-link"><%= currentUser.username %></a></li>
+          <li class="nav-item"><a href="/<%= currentUser.username %>/jobs" class="nav-link">Post a job</a></li>
+          <li class="nav-item"><a href="/jobs" class="nav-link">Find a job</a></li>
+          <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+        <% } %>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>

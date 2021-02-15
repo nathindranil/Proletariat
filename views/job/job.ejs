@@ -1,0 +1,20 @@
+<%- include("../partials/header") %>
+  <div class="jobform">
+    <h3>Post new job</h3>
+    <form action="/<%= currentUser.username %>/jobs" method="post">
+      <label for="jobTitle">Title</label>
+      <input type="text" name="jobTitle" placeholder="Job title">
+      <h3 id="radioheading">Category</h3>
+      <div class="radio">
+        <input id="jobchoice1" type="radio" name="jobChoice" value="animalcare">
+        <label for="jobchoice1">Animal Care</label><br>
+        <input id="jobchoice2" type="radio" name="jobChoice" value="housemaid">
+        <label for="jobchoice2">Housemaid</label>
+      </div>
+      <label for="jobDescription">Description</label>
+      <textarea id="jobDescription" name="jobDescription" placeholder="Give a description ..." rows="8" cols="42"></textarea>
+      <button type="submit" name="button">Submit</button>
+    </form>
+  </div>
+
+<%- include("../partials/footer") %>

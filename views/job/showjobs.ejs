@@ -1,0 +1,18 @@
+<%- include("../partials/header") %>
+<div class="search">
+  <form action="/findjob" method="post">
+      <input type="text" name="title" placeholder="Search">
+      <button type="submit" name="button">Search</button>
+  </form>
+</div>
+<% job.forEach((job) => { %>
+  <div class="showjob">
+    <ul>
+      <li><span><%= job.title %></span> - <br><%= job.description.substring(0,100) %></li>
+    </ul>
+    <p><b>Posted on - </b><%= job.date %></p>
+    <p><a href="/<%= job._id %>/details">Details</a></p>
+  </div>
+
+<% }) %>
+<%- include("../partials/footer") %>
