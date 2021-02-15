@@ -18,7 +18,7 @@ mongoose.connect('mongodb+srv://team:hello@major-project.mclgk.mongodb.net/major
 const secret = process.env.SECRET|| 'just a secret'
 
 const store = new MongoDBStore({
-  url: 'mongodb://localhost:27017/majorproject',
+  url: 'mongodb+srv://team:hello@major-project.mclgk.mongodb.net/major-project?retryWrites=true&w=majority',
   secret: 'justasecret',
   touchAfter: 24 * 3600
 })
