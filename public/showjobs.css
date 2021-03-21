@@ -1,6 +1,6 @@
 .showjob {
   border: none;
-  width: 80%;
+  width: 60%;
   margin: 1.2em auto;
   background-color: rgb(242, 242, 242);
   min-height: 5em;
@@ -10,6 +10,13 @@
   padding: 1em;
 }
 
+@media screen and (max-width: 1024px) {
+  .showjob {
+    width: 95%;
+    margin: 1em auto;
+  }
+}
+
 .showjob li {
   list-style: none;
 }
@@ -17,7 +24,17 @@
 .showjob span {
   font-weight: bold;
   font-size: 1.4rem;
-  margin-bottom: 3%;
+  line-height: 2em;
+}
+
+.showjob a {
+  color: #000;
+  text-decoration: none;
+}
+
+.showjob a:hover {
+  color: rgba(0,0,0,0.9);
+  text-decoration: underline;
 }
 
 .showjob p {

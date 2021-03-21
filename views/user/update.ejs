@@ -3,11 +3,11 @@
     <h2>Update your contact info</h2>
     <form action="/<%= user._id %>/update?_method=put" method="post">
       <label for="address">Address</label>
-      <input type="text" name="address" placeholder="address">
+      <input type="text" name="address" placeholder="address" value="<%= user.address %>">
       <label for="pincode">Pincode</label>
-      <input type="number" name="pincode" placeholder="pincode">
+      <input type="number" name="pincode" placeholder="pincode" value="<%= user.pincode %>">
       <label for="phone">Phone</label>
-      <input type="number" name="phone" placeholder="phone">
+      <input type="number" name="phone" placeholder="phone" value="<%= user.contact %>">
       <button type="submit">Update</button>
     </form>
   </div>

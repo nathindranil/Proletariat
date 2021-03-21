@@ -1,7 +1,7 @@
 .job {
   background-color: white;
   margin: 2em auto;
-  width: 60%;
+  width: 95%;
   padding: 1em;
 }
 
@@ -11,10 +11,20 @@
 }
 
 .jobdesc {
-  margin: 0 auto;
-  width: 80%;
+  margin: 0 auto 2em auto;
+  width: 90%;
 }
 
 .employer {
   text-align: right;
+  margin-right: 1.5em;
+}
+
+.employer a {
+  color: rgb(0, 41, 107);
+  text-decoration: none;
+}
+
+.employer a:hover {
+  text-decoration: underline;
 }

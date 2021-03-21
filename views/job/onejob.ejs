@@ -2,6 +2,6 @@
 <div class="job">
   <h2 class="jobtitle"><%= job.title %></h2>
   <p class="jobdesc"><%= job.description %></p>
-  <p class="employer">Posted by: <%= job.creator.username %> on <%= job.date %></p>
+  <p class="employer">Posted by: <a href="/<%= job.creator.username %>/profile"><%= job.creator.username %></a> on <%= job.date %></p>
 </div>
 <%- include("../partials/footer") %>

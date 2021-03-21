@@ -89,3 +89,9 @@ hr {
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media screen and (width: 768px) {
+  #contact {
+    margin-top: -12%;
+  }
+}
