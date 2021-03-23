@@ -12,8 +12,27 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  background: #1E242A;
   font-family: 'Nunito', sans-serif;
+
+}
+
+.loginnav {
+  background-color: #000;
+  min-height: 8vh;
+}
+
+.logo {
+  color: rgb(226,226,226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  width: 50%;
+  text-decoration: none;
+}
+
+.loginnav a {
+  color: white;
 }
 
 .cont input, .cont button{
