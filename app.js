@@ -7,12 +7,13 @@
     LocalStrategy = require("passport-local"),
     User = require("./models/user"),
     Job = require('./models/job'),
+    Review = require('./models/reviews'),
     MongoDBStore = require("connect-mongo")(session),
     app = express()
 
 app.set("view engine", "ejs")
 
-//mongoose.connect('mongodb://localhost:27017/majorproject', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false});
+//mongoose.connect('mongodb://localhost:27017/majorproject', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: false, useFindAndModify: false});
 mongoose.connect('mongodb+srv://team:hello@major-project.mclgk.mongodb.net/major-project?retryWrites=true&w=majority', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false})
 
 const secret = process.env.SECRET|| 'just a secret'
@@ -76,7 +77,7 @@ app.post("/login", passport.authenticate('local', {failureFlash: true, failureRe
 })
 
 app.get("/:username/profile", (req, res) => {
-  User.findOne({username: req.params.username}, (err, user) => {
+  User.findOne({username: req.params.username}).populate("reviews").exec(function(err, user) {
     if(err) {
       console.log(err);
     } else {
@@ -99,6 +100,22 @@ app.put("/:id/update", async (req, res) => {
   const user = await User.findByIdAndUpdate({_id: req.params.id}, {address: req.body.address, pincode: req.body.pincode, contact: req.body.phone})
   res.redirect(`/${user.username}/profile`)
 })
+
+app.post("/:id/reviews", (req, res) => {
+  var review = {body: req.body.reviewbody, rating: req.body.reviewrating}
+  User.findOne({_id: req.params.id}, (err, user) => {
+    if(err) {
+      console.log(err);
+    } else {
+      var reviews = new Review(review)
+      user.reviews.push(reviews)
+      reviews.save()
+      user.save()
+      res.redirect("/")
+    }
+  })
+})
+
 
 app.get("/:username/jobs", (req, res) => {
   res.render("job/job")
@@ -166,7 +183,7 @@ app.get("/logout", (req, res) => {
   res.redirect("/")
 })
 
-var port = process.env.PORT || 8000
+var port = process.env.PORT || 3000
 
 app.listen(port, () => {
   console.log("Server has started")

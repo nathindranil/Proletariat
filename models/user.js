@@ -10,7 +10,13 @@ const UserSchema = new Schema({
   username: String,
   address: String,
   pincode: Number,
-  contact: Number
+  contact: Number,
+  reviews: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Review"
+    }
+  ]
 });
 
 UserSchema.plugin(passportLocalMongoose)

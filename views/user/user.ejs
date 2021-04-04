@@ -16,9 +16,31 @@
       <p>Email: <%= user.email %></p>
       <p>Phone: <%= user.contact %></p>
     </div>
-    <p id="profileuppdate"><a href="/<%= user._id %>/update">Update your profile</a></p>
+    <p id="profileuppdate"><button type="submit" name="button"><a href="/<%= user._id %>/update">Update your profile</a></button></p>
   <% } else { %>
-    <p id="profileuppdate"><a href="/<%= user._id %>/update">Update your profile</a></p>
+    <p id="profileuppdate"><button type="submit" name="button"><a href="/<%= user._id %>/update">Update your profile</a></button></p>
   <% } %>
+  </div>
+  <div class="reviews">
+    <h2>Reviews</h2>
+    <% for(let review of user.reviews) {%>
+      <div class="userreviews">
+        <p><strong> Rating - <%= review.rating %> </strong></p>
+        <p>Review - <%= review.body %></p>
+      </div>
+    <% } %>
+  </div>
+
+
+<div class="review">
+  <h2>Leave a review</h2>
+  <form class="reviewform" action="/<%= user._id %>/reviews" method="post">
+    <label for="rating">Rating</label>
+    <input type="range" min="1" max="5" name="reviewrating">
+    <label for="reviewBody">Review</label>
+    <textarea id="reviewBody" name="reviewbody" rows="3" cols="24" required></textarea>
+     <br>
+    <button type="submit" name="button">Submit</button>
+  </form>
 </div>
 <%- include("../partials/footer") %>
