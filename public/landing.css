@@ -50,7 +50,7 @@
 #box2 {
   width: auto;
   height: auto;
-  font-family: 'Bahnschrift Condensed';
+  font-family: 'Rock Salt', cursive;
   color: white;
   font-size: 5em;
   font-weight: 500;
@@ -59,6 +59,7 @@
   top: 250px;
   left: 100px;
   overflow: hidden;
+  letter-spacing: 30px;
 }
 
 #text {

@@ -3,12 +3,13 @@
   margin: 3em auto;
   width: 70%;
   padding: 4em;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   overflow: hidden;
+  font-size: 20px;
 }
 
 hr {
-  margin: 3em auto;
+  margin: 2em auto 3em auto;
   width: 90%;
   color: rgba(156, 156, 156, 0.5);
 }
@@ -26,7 +27,7 @@ hr {
 
 #address h4 {
   border-bottom: 1px solid black;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 #pincode {
@@ -37,7 +38,7 @@ hr {
 
 #pincode h4 {
   border-bottom: 1px solid black;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 #contact {
@@ -48,7 +49,7 @@ hr {
 
 #contact h4 {
   border-bottom: 1px solid black;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 #profileuppdate {
@@ -97,12 +98,25 @@ hr {
 .reviews h2 {
   text-align: center;
   margin-bottom: 1.2em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
 }
 
 .userreviews {
   border: 1px solid grey;
   margin: 1.5em auto;
   padding: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+#rating {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.userreviews p {
+  font-size: 300;
 }
 
 .review {
@@ -116,6 +130,9 @@ hr {
 
 .review h2 {
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em;
+  margin-bottom: 1.5em;
 }
 
 .reviewform label{

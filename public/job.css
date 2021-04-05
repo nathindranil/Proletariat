@@ -2,8 +2,10 @@ body {
   background: #1E242A;
 }
 
-h3 {
-  font-size: 24px;
+h2 {
+  font-size: 40px;
+  font-family: 'Merienda', cursive;
+  text-align: center;
 }
 
 .jobform {

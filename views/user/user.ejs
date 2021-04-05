@@ -22,10 +22,10 @@
   <% } %>
   </div>
   <div class="reviews">
-    <h2>Reviews</h2>
+    <h2>REVIEWS</h2>
     <% for(let review of user.reviews) {%>
       <div class="userreviews">
-        <p><strong> Rating - <%= review.rating %> </strong></p>
+        <p id="rating">Rating - <%= review.rating %></p>
         <p>Review - <%= review.body %></p>
       </div>
     <% } %>
@@ -33,7 +33,7 @@
 
 
 <div class="review">
-  <h2>Leave a review</h2>
+  <h2>LEAVE A REVIEW</h2>
   <form class="reviewform" action="/<%= user._id %>/reviews" method="post">
     <label for="rating">Rating</label>
     <input type="range" min="1" max="5" name="reviewrating">

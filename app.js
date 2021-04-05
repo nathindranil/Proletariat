@@ -111,7 +111,7 @@ app.post("/:id/reviews", (req, res) => {
       user.reviews.push(reviews)
       reviews.save()
       user.save()
-      res.redirect("/")
+      res.redirect(`/${user.username}/profile`)
     }
   })
 })
