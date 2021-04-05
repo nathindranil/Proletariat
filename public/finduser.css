@@ -1,0 +1,64 @@
+#userfind form{
+  width: 50%;
+  margin: 0 auto;
+}
+
+#userfind input {
+  width: 100%;
+}
+
+#userfind label {
+  margin: 2em auto;
+  color: #fff;
+}
+
+#userfind button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 4em;
+  background-image: linear-gradient(to left, #7579ff, #b224ef);
+  border: 0;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+#userfind button:hover {
+  background-image: linear-gradient(to left, #b224ef, #7579ff);
+}
+
+
+#showusers {
+  width: 50%;
+  margin: 2em auto;
+  text-align: center;
+
+}
+
+#showusers a{
+  color: #fff;
+  font-family: "Josefin Sans", cursive;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#showusers a:hover {
+  text-decoration: underline;
+}
+
+
+#failedsearch {
+  background-color: red;
+  width: 30%;
+  margin: 2em auto;
+  padding: 0.5em;
+  text-align: center;
+  font-family: "Josefin Sans", cursive;
+  font-weight: 700;
+  color: #fff;
+  font-size: 30px;
+}

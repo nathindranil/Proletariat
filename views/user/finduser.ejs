@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+<div id="userfind">
+  <form action="/find" method="post">
+    <label for="search">Search for Users</label>
+    <input type="text" name="searchuser" id="search">
+    <button type="submit" name="button">SEARCH</button>
+  </form>
+</div>
+
+<% if(user != undefined) { %>
+  <div id="showusers">
+    <a href="/<%= user.username %>/profile"><%= user.username %></a>
+  </div>
+<% } else { %>
+  <p id="failedsearch">No users found. Please try again!</p>
+<%}%>
+
+
+<%- include("../partials/footer") %>

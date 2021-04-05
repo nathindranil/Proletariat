@@ -29,6 +29,12 @@ nav {
 
 .nav-links li {
   list-style: none;
+  border-right: 1px solid white;
+  padding-right: 6px;
+}
+
+.nav-links li:last-child {
+  border: none;
 }
 
 .nav-links a {
@@ -37,6 +43,10 @@ nav {
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 .burger {

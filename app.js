@@ -86,6 +86,26 @@ app.get("/:username/profile", (req, res) => {
   })
 })
 
+app.get("/find", (req, res) => {
+  User.find({}, (err, user) => {
+    if(err) {
+      console.log(err);
+    } else {
+      res.render("user/finduser", {user: user});
+    }
+  })
+})
+
+app.post("/find", (req, res) => {
+  User.findOne({username: req.body.searchuser}, (err, user) => {
+    if(err) {
+      console.log(err);
+    } else {
+      res.render("user/finduser", {user:user})
+    }
+  })
+})
+
 app.get("/:id/update", (req,res) => {
   User.findOne({_id: req.params.id}, (err, user) => {
     if(err) {
