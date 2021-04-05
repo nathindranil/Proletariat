@@ -1,7 +1,7 @@
 .job {
   background-color: white;
   margin: 2em auto;
-  width: 95%;
+  width: 50%;
   padding: 1em;
 }
 
@@ -13,11 +13,13 @@
 .jobdesc {
   margin: 0 auto 2em auto;
   width: 90%;
+  font-size: 20px;
 }
 
 .employer {
   text-align: right;
   margin-right: 1.5em;
+  font-size: 18px;
 }
 
 .employer a {
